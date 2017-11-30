@@ -17,11 +17,10 @@
         document.getElementById("loglat").innerHTML = 'Latitud: ' + marker.getPosition().lat();
         document.getElementById("loglong").innerHTML = 'Longitud: ' + marker.getPosition().lng();
     }
-
     function initialize() {
-        var myLatlng = new google.maps.LatLng(20.654120, -103.325831);
+        var myLatlng = new google.maps.LatLng(-11.67840, -76.39702);
         var myOptions = {
-            zoom: 16,
+            zoom: 10,
             center: myLatlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
         }
@@ -47,7 +46,7 @@
 </script> 
 </head> 
 <body onload="initialize()"> 
-   
+ <script type="text/javascript" src="cordova.js"></script>   
 <div id="map_canvas" style="width: 700px; height: 450px;"></div><br> 
 <font color="#0000FF"><strong id="loglat">Latitud:</strong></font>  
 
